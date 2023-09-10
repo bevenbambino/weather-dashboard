@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="jumbotron custom-jumbo">
+        <h1 class="display-4 d-flex justify-content-center">Weather Dashboard</h1>
+    </header>
+
+    <main class="container-fluid">
+        <section class="row my-4 ">
+            <div class="col-12 col-sm-4 col-md-3 py-2 custom-search-div">
+                <div class="form-group">
+                    <h4>Search for a City:</h4>
+                    <input type="text" class="form-control" id="searchCity" placeholder="city name">
+                    <button type="submit" class="btn btn-info my-2 d-flex justify-content-center w-100" id="searchBtn">Search</button>
+                    <p class="border border-dark border-bottom mt-4">      </p>
+                </div>  
+                
+                <ul class="list-group"></ul>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-9 custom-weather-info">
+                <div class="current-weather text-center"></div>
+                <div class="five-day-forcast">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
